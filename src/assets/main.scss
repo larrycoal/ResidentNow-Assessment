@@ -1,0 +1,143 @@
+html,body,#root{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+}
+.login-page-wrapper{
+    height: 100vh;
+    width: 100vw;
+    background-color: #d8fbe9;
+    display: flex;
+    .right{
+        flex-grow: 1;
+    }
+    .left{
+        background-color: white;
+        padding: 2rem 3rem;
+        form{
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            gap: 2rem;
+            justify-content: center;
+            div{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                input{
+                    padding: 1rem;
+                    width: 18rem;
+                    border-radius: 5px;
+                    border: 1px solid #e56d2b;
+                    outline: none;
+                }
+                input[type="submit"]{
+                    background-color: #e56d2b;
+                    color: white;
+                    font-size: 1.5rem;
+                    cursor: pointer;
+                }
+                .acct-act{
+                    color: #e56d2b;
+                    cursor: pointer;
+                }
+                .error{
+                    display: block;
+                    font-size: 12px;
+                    color: red;
+                }
+            }
+        }
+    }
+}
+.todo_wrapper{
+    nav{
+        display: flex;
+        padding: 1rem 2rem;
+        h2{
+            flex-grow: 1;
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-size: 18px;
+            span{
+                text-transform: uppercase;
+            }
+            .logOut{
+                background-color:#e56d2b ;
+                padding: 5px;
+                color: white;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+        }
+    }
+    .todoBox_wrapper{
+        display: flex;
+        justify-content: center;
+        margin: 3rem;
+        .todoBox{
+         height: 25rem;
+         width: 25rem;
+         border: 1px solid #4f5a20;
+         border-radius: 5px;
+         overflow: scroll;
+         form{
+             display: flex;
+             gap: 15px;
+             padding: 15px;
+             input{
+                 border: none;
+                 border-bottom: 1px solid #e56d2b;
+                 flex-grow: 1;
+                 padding: 5px;
+                 outline: none;
+             }
+             button{
+                 background-color: #585858;
+                 color: white;
+                 border: none;
+                 padding: 5px 15px;
+                 border-radius: 5px;
+                 cursor: pointer;
+             }
+         }
+         h3{
+             margin: 0;
+             padding: .5rem;
+             color: white;
+             background-color: #4f5a20;
+         }
+         .todoList{
+             display: flex;
+             flex-direction: column;
+             gap: 5px;
+             div{
+                 display: flex;
+                 padding: 15px;
+                 background-color: #f2f3ec;
+                 :nth-child(1){
+                     flex-grow: 1;
+                     text-transform: uppercase;
+                 }
+                 i{
+                     color: red;
+                     cursor: pointer;
+                 }
+             }
+             .empty{
+                 font-size: 2rem;
+                 justify-content: center;
+                 color: gray;
+                 background-color: white;
+             }
+         }
+        }
+    }
+
+}
